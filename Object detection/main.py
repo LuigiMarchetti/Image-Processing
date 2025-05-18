@@ -9,7 +9,7 @@ model = YOLO("yolo11n.pt")
 
 
 # Open the video file
-video_path = "test2.mp4"
+video_path = "test1.mp4"
 cap = cv2.VideoCapture(video_path)
 
 paused = False  # Flag de pausa
