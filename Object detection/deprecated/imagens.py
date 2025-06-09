@@ -3,7 +3,7 @@ from PIL import Image
 from ultralytics import YOLO
 
 # Load a pretrained YOLO11n model
-model = YOLO("yolo11n.pt")
+model = YOLO("../yolo11n.pt")
 
 results = model("test1.mp4")
 

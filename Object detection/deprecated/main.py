@@ -2,14 +2,14 @@ import cv2
 from ultralytics import YOLO
 
 # Load the YOLO model
-model = YOLO("yolo11n.pt")
+model = YOLO("../yolo11n.pt")
 #model = YOLO("yolov8x.pt")
 #model = YOLO("yolo11x.pt")
 #model = YOLO("yolo11m.pt")
 
 
 # Open the video file
-video_path = "test1.mp4"
+video_path = "../test1.mp4"
 cap = cv2.VideoCapture(video_path)
 
 paused = False  # Flag de pausa
