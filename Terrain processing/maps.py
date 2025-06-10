@@ -2,7 +2,7 @@ import requests
 import os
 import time
 
-API_KEY = 'AIzaSyCfCLhRJTQLBjnfzZp7f-_B2ndvbfhbZ3Y'
+API_KEY = ''
 
 locais = [
     {"nome": "Prefeitura", "lat": -26.920284, "lng": -49.065802},
@@ -12,7 +12,6 @@ locais = [
     {"nome": "Castelinho da Havan", "lat": -26.922477, "lng": -49.065358},
 ]
 
-# Parâmetros da imagem
 zoom = 18  # quanto maior, mais perto
 tamanho = "640x640"  # tamanho máximo permitido para uso gratuito
 
@@ -33,6 +32,6 @@ for i, local in enumerate(locais):
         print(f"[✔] Imagem salva: {filename}")
     else:
         print(f"[✖] Falha ao obter imagem de {local['nome']}")
-    time.sleep(1)  # respeitar limites de requisição
+    time.sleep(1)
 
 print("✅ Download concluído.")

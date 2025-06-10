@@ -3,10 +3,10 @@ import cv2
 from ultralytics import YOLO
 
 # Load the YOLO model
-model = YOLO("yolo11n.pt")
+model = YOLO("../yolo11n.pt")
 
 # Open the video file
-video_path = "test2.mp4"
+video_path = "../test2.mp4"
 cap = cv2.VideoCapture(video_path)
 
 # Loop through the video frames
